@@ -1,0 +1,159 @@
+nav {
+  top: 0;
+  z-index: 100;
+  background: rgb(255, 255, 255);
+}
+.nav-container {
+  max-width: var(--containerWidthDesktop);
+  margin: 0 auto;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+.nav-center {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.nav-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.nav-logo {
+  width: 150px;
+}
+
+.links-container {
+  width: 100%;
+  padding-left: 30px;
+  height: auto !important;
+}
+.links {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.links a {
+  color: var(--GrayishViolet);
+  padding: 0;
+  margin: 0 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  transition: var(--transition);
+}
+.links a:hover {
+  color: var(--VeryDarkViolet);
+  background-color: transparent;
+  padding: 0;
+}
+
+.align-right {
+  position: absolute;
+  right: 0;
+  padding-top: 2px;
+}
+.sign-up-btn {
+  width: 100px;
+  height: 38px;
+  background-color: var(--Cyan);
+  color: white;
+  font-weight: bold;
+  border-color: transparent;
+  border-radius: 50px;
+  transition: var(--transition);
+}
+
+.sign-up-btn:hover {
+  background-color: var(--Cyan);
+  opacity: 50%;
+  cursor: pointer;
+}
+
+.nav-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 785px) {
+  .nav-container {
+    max-width: var(--containerWidthDesktop);
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+  .nav-center {
+    display: none;
+  }
+
+  .nav-mobile {
+    display: flex;
+    padding: 20px;
+  }
+
+  .nav-mobile-box {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 300px;
+    padding: 10px;
+
+    background-color: var(--DarkViolet);
+    border-radius: 10px;
+    text-align: center;
+    position: absolute;
+    top: 220px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+  }
+
+  .nav-mobile .nav-logo {
+    width: 120px;
+  }
+
+  .nav-mobile-box a {
+    color: var(--GrayishViolet);
+    padding: 0;
+    margin: 0 1rem;
+    margin-top: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    transition: var(--transition);
+  }
+
+  .nav-button {
+    align-items: center;
+    color: var(--Gray);
+    font-size: 25px;
+    padding-right: 20px;
+    cursor: pointer;
+  }
+
+  .sign-up-btn {
+    width: 280px;
+    height: 38px;
+    background-color: var(--Cyan);
+    color: white;
+    font-weight: bold;
+    border-color: transparent;
+    border-radius: 50px;
+    font-size: 16px;
+    transition: var(--transition);
+  }
+
+  .underline-inbox {
+    width: 280px;
+    height: 0.1rem;
+    background: var(--GrayishViolet);
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+}

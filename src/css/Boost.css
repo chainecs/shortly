@@ -1,0 +1,36 @@
+.boost-container {
+  max-width: var(--containerWidthDesktop);
+  margin: 0 auto;
+  justify-content: center;
+  text-align: center;
+}
+
+.boost-block {
+  padding: 70px 0 70px 0;
+}
+
+.boost-container p {
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 0.5;
+}
+
+@media screen and (max-width: 375px) {
+  .boost-container {
+    max-width: var(--containerWidthDesktop);
+    justify-content: center;
+    text-align: center;
+  }
+
+  .boost-block {
+    padding: 70px 0 70px 0;
+  }
+
+  .boost-container p {
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 0.5;
+  }
+}

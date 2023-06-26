@@ -1,0 +1,112 @@
+.cover-container {
+  max-width: var(--containerWidthDesktop);
+  margin: 0 auto;
+  padding-left: 5rem;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 100px;
+  overflow: hidden;
+}
+
+.cover-description {
+  padding-top: 20px;
+  width: 50%;
+  list-style-type: none;
+}
+
+.cover-container img {
+  width: 700px;
+  height: auto;
+  object-fit: contain;
+  margin-right: -200px;
+}
+
+.cover-container h1 {
+  font-size: 70px;
+  line-height: 1.1;
+  margin-bottom: -15px;
+  color: var(--VeryDarkBlue);
+}
+
+.cover-container p {
+  font-size: 22px;
+  width: 85%;
+  /*line-height: 1;*/
+  color: var(--Gray);
+}
+
+.get-started-btn {
+  width: 140px;
+  height: 38px;
+  background-color: var(--Cyan);
+  color: white;
+  font-weight: bold;
+  border-color: transparent;
+  border-radius: 50px;
+  transition: var(--transition);
+}
+
+.get-started-btn:hover {
+  background-color: #95e7e7;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 785px) {
+  .cover-container {
+    max-width: var(--containerWidthDesktop);
+    padding-left: 0rem;
+    padding-right: 0rem;
+    margin: 0 auto;
+    margin-bottom: 70px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+  }
+
+  .cover-description {
+    padding-top: 20px;
+    width: 100%;
+  }
+
+  .cover-container img {
+    width: 500px;
+    margin-left: 180px;
+    height: auto;
+    object-fit: contain;
+    margin-right: 0;
+  }
+
+  .cover-container h1 {
+    width: 100%;
+    font-size: 40px;
+    margin: auto;
+    line-height: 1.1;
+    margin-bottom: 10px;
+    color: var(--VeryDarkBlue);
+  }
+
+  .cover-container p {
+    font-size: 18px;
+    width: 100%;
+    /*line-height: 1;*/
+    color: var(--Gray);
+    padding: 0 20px 0 20px;
+  }
+
+  .get-started-btn {
+    width: 170px;
+    height: 45px;
+    background-color: var(--Cyan);
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border-color: transparent;
+    border-radius: 50px;
+    transition: var(--transition);
+  }
+}

@@ -1,0 +1,125 @@
+.footer-container {
+  max-width: var(--containerWidthDesktop);
+  margin: 0 auto;
+  padding: 100px 5rem 50px 5rem;
+  justify-content: center;
+}
+
+.footer-block {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 12px;
+}
+
+.footer-section-1 {
+  width: 28%;
+}
+
+.footer-section-234 {
+  width: 18%;
+}
+
+.footer-section-234 a {
+  color: var(--GrayishViolet);
+  text-decoration: none;
+  line-height: 2;
+  transition: var(--transition);
+}
+
+.footer-section-234 a:hover {
+  color: var(--Cyan);
+}
+
+.footer-header {
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.footer-icon {
+  text-decoration: none;
+  color: white;
+  font-size: 30px;
+  margin-left: 20px;
+  transition: var(--transition);
+}
+
+.footer-icon:hover {
+  color: var(--Cyan);
+}
+
+.footer-logo {
+  width: 100px;
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg)
+    brightness(102%) contrast(102%);
+}
+
+.footer-section-5 {
+  color: white;
+  font-size: 12px;
+}
+
+@media screen and (max-width: 785px) {
+  .footer-container {
+    padding: 50px 0 50px 0;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .footer-block {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 12px;
+  }
+
+  .footer-section-1 {
+    width: 100%;
+    padding-bottom: 30px;
+  }
+
+  .footer-section-234 {
+    width: 100%;
+    padding-bottom: 30px;
+  }
+
+  .footer-section-234 a {
+    color: var(--GrayishViolet);
+    text-decoration: none;
+    line-height: 2;
+    transition: var(--transition);
+  }
+
+  .footer-section-234 a:hover {
+    color: var(--Cyan);
+  }
+
+  .footer-header {
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: white;
+  }
+
+  .footer-icon {
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    margin-left: 10px;
+    transition: var(--transition);
+  }
+
+  .footer-icon:hover {
+    color: var(--Cyan);
+  }
+
+  .footer-logo {
+    width: 100px;
+
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg)
+      brightness(102%) contrast(102%);
+  }
+
+  .footer-section-5 {
+    color: white;
+    font-size: 12px;
+  }
+}

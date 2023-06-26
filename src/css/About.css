@@ -1,0 +1,30 @@
+.about-container {
+  max-width: var(--containerWidthDesktop);
+  margin: 0 auto;
+  display: grid;
+  padding: 50px 0 50px 0;
+}
+.about-container h1 {
+  color: var(--DarkViolet);
+}
+
+.about-container p {
+  max-width: 470px;
+  color: var(--GrayishViolet);
+}
+
+@media screen and (max-width: 375px) {
+  .about-container {
+    max-width: var(--containerWidthDesktop);
+    padding: 50px 0 50px 0;
+  }
+  .about-container h1 {
+    font-size: 28px;
+    color: var(--DarkViolet);
+  }
+
+  .about-container p {
+    max-width: 300px;
+    color: var(--GrayishViolet);
+  }
+}

@@ -1,0 +1,112 @@
+.link-list-container {
+  max-width: var(--containerWidthDesktop);
+  margin: 0 auto;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  justify-content: center;
+}
+
+.link-list-box {
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 5px;
+  align-items: center;
+}
+
+.full-link {
+  width: 100%;
+  color: var(--VeryDarkViolet);
+  overflow: auto;
+}
+
+.short-link {
+  color: var(--Cyan);
+  margin: 0 20px;
+}
+
+.copy-btn {
+  width: 120px;
+  height: 38px;
+  background-color: var(--Cyan);
+  color: white;
+  font-weight: bold;
+  border-color: transparent;
+  border-radius: 5px;
+  transition: var(--transition);
+}
+
+.copied-btn {
+  width: 120px;
+  height: 38px;
+  background-color: var(--DarkViolet);
+  color: white;
+  font-weight: bold;
+  border-color: transparent;
+  border-radius: 5px;
+  transition: var(--transition);
+}
+
+.copy-btn:hover {
+  background-color: #95e7e7;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 792px) {
+  .link-list-container {
+    justify-content: center;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .link-list-box {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0 10px 0;
+    margin-top: 20px;
+    border-radius: 5px;
+    align-items: center;
+  }
+
+  .full-link {
+    width: 100%;
+    color: var(--VeryDarkViolet);
+    border-bottom: 1px solid var(--Gray);
+    padding: 0 10px 10px 10px;
+    overflow: auto;
+  }
+
+  .button-mobile-box {
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  .short-link {
+    width: 100%;
+    color: var(--Cyan);
+    margin: 10px 0 10px 0;
+    padding: 0 10px;
+  }
+
+  .copy-btn {
+    width: 100%;
+    height: 42px;
+    background-color: var(--Cyan);
+    color: white;
+    font-weight: bold;
+    border-color: transparent;
+    border-radius: 8px;
+  }
+
+  .copied-btn {
+    width: 100%;
+    height: 42px;
+    background-color: var(--DarkViolet);
+    color: white;
+    font-weight: bold;
+    border-color: transparent;
+    border-radius: 8px;
+  }
+}
